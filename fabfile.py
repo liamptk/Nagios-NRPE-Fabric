@@ -4,7 +4,7 @@ from fabric.api import *
 
 env.use_ssh_config = True
 		
-#### Install NRPE
+#### Install NRPE #####
 def ubuntu_nrpe():
 	sudo('apt-get -y update && apt-get -y install nagios-nrpe-server nagios-plugins sed')
 
